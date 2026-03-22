@@ -12,5 +12,5 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const jsonData = fs.readFileSync(filePath, 'utf-8');
   const data = JSON.parse(jsonData);
 
-  return res.status(200).json({ usuarios: data.usuarios });
+  return res.status(200).json({ emprestimos: data.emprestimos });
 }
